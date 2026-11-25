@@ -30,7 +30,7 @@ body{
 .heading-whole-text{
   font-weight: 200;
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .heading-bottom-text{
@@ -45,10 +45,69 @@ body{
 .card-display{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 4rem 8rem;
+  margin: 3rem 8rem;
+  align-items: center;
 }
 
 .column{
-  margin: 0rem 2rem;
-  align-content: center;
+  margin: 0rem 1rem;
+}
+
+.column:nth-child(2){
+  display: grid;
+  gap: 2rem;
+}
+
+.card{
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px hsl(230, 12%, 34%, 0.25);
+  padding: 2rem;
+
+  height: 18rem;
+  width: 26rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.card-content{
+  padding-right: 2rem;
+}
+
+.card-content-desc{
+  margin-top: 0.5rem;
+  line-height: 1.6rem;
+  color: var(--grey-400);
+}
+
+.img-box{
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  align-items: center;
+}
+
+.cyan-card{
+  border-top: 8px solid var(--cyan);
+}
+
+.red-card{
+  border-top: 8px solid var(--red);
+}
+
+.orange-card{
+  border-top: 8px solid var(--orange);
+}
+
+.blue-card{
+  border-top: 8px solid var(--blue);
 }
